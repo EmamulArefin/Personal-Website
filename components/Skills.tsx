@@ -10,7 +10,7 @@ export function Skills() {
         { name: "React", level: 95 },
         { name: "Next.js", level: 90 },
         { name: "JavaScript", level: 95 },
-        { name: "TypeScript", level: 85 },
+        { name: "TypeScript", level: 95 },
         { name: "HTML/CSS", level: 95 },
         { name: "Tailwind CSS", level: 90 },
       ]
@@ -21,7 +21,6 @@ export function Skills() {
         { name: "Node.js", level: 90 },
         { name: "NestJS", level: 95 },
         { name: ".NET MVC", level: 90 },
-        { name: "Python", level: 75 },
         { name: "C#", level: 85 },
         { name: "C++", level: 90 },
       ]
@@ -33,13 +32,15 @@ export function Skills() {
         { name: "MySQL", level: 90 },
         { name: "SQL Server", level: 95 },
         { name: "Firebase", level: 90 },
+        { name: "PHPMyAdmin", level: 90 },
       ]
     },
     {
       title: "Tools & Others",
       skills: [
         { name: "GitHub", level: 90 },
-        { name: "R", level: 65 },
+        { name: "Python", level: 90 },
+        { name: "R", level: 85 },
       ]
     }
   ];
@@ -131,12 +132,12 @@ export function Skills() {
           >
             <div className="inline-flex items-center space-x-8 bg-white rounded-xl p-6 shadow-lg">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">5+</div>
+                <div className="text-3xl font-bold text-blue-600">0+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
               <div className="w-px h-12 bg-gray-200"></div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600">50+</div>
+                <div className="text-3xl font-bold text-purple-600">5+</div>
                 <div className="text-sm text-gray-600">Projects Completed</div>
               </div>
               <div className="w-px h-12 bg-gray-200"></div>
