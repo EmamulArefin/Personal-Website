@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -12,19 +14,30 @@ export function Contact() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,      // 🔁 Replace with your actual EmailJS Service ID
+       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,     // 🔁 Replace with your actual EmailJS Template ID
+      formData,
+       process.env.NEXT_PUBLIC_EMAILJS_USER_ID!       // 🔁 Replace with your actual EmailJS Public Key (User ID)
+    ).then(
+      () => {
+        toast.success('✅ Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      },
+      (error) => {
+        toast.error('❌ Failed to send message. Please try again.');
+      }
+    );
   };
 
   const containerVariants = {
