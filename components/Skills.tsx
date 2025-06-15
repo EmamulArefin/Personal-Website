@@ -19,28 +19,26 @@ export function Skills() {
       title: "Backend",
       skills: [
         { name: "Node.js", level: 90 },
-        { name: "NestJS", level: 85 },
-        { name: ".NET MVC", level: 80 },
+        { name: "NestJS", level: 95 },
+        { name: ".NET MVC", level: 90 },
         { name: "Python", level: 75 },
-        { name: "C#", level: 80 },
-        { name: "C++", level: 70 },
+        { name: "C#", level: 85 },
+        { name: "C++", level: 90 },
       ]
     },
     {
       title: "Database",
       skills: [
-        { name: "PostgreSQL", level: 90 },
-        { name: "MySQL", level: 85 },
-        { name: "SQL Server", level: 85 },
-        { name: "MongoDB", level: 75 },
+        { name: "PostgreSQL", level: 95 },
+        { name: "MySQL", level: 90 },
+        { name: "SQL Server", level: 95 },
+        { name: "Firebase", level: 90 },
       ]
     },
     {
       title: "Tools & Others",
       skills: [
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 75 },
-        { name: "AWS", level: 70 },
+        { name: "GitHub", level: 90 },
         { name: "R", level: 65 },
       ]
     }
