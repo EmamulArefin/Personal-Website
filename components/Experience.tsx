@@ -6,21 +6,18 @@ import { title } from 'node:process';
 
 export function Experience() {
   const experiences = [
-   /* {
-      title: "Senior Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      location: "Remote",
-      period: "2022 - Present",
-      description: [
-        "Led development of scalable web applications using React, Next.js, and Node.js",
-        "Implemented microservices architecture resulting in 40% improved performance",
-        "Mentored junior developers and conducted code reviews",
-        "Collaborated with cross-functional teams to deliver high-quality products"
-      ],
-      technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS"]
-    }*/
     {
-      title: "Fresh Man", }
+      title: "Database Manager",
+      company: "IRD Foundataion",
+      location: "South Bansree, Dhaka, Bangladesh",
+      period: "June 2025 - Present",
+      description: [
+        "Developed and maintained database systems for various projects",
+        "Collaborated with cross-functional teams to ensure data integrity and security",
+        "Implemented data migration strategies to improve system performance",
+      ],
+      technologies: ["Python", "SQLite"]
+    }
   ];
 
   const containerVariants = {
@@ -84,12 +81,12 @@ export function Experience() {
                       <h3 className="text-xl font-bold text-gray-900 mb-1">
                         {experience.title}
                       </h3>
-                      {/* <div className="flex items-center text-blue-600 mb-2">
+                       <div className="flex items-center text-blue-600 mb-2">
                         <Building size={16} className="mr-2" />
                         <span className="font-medium">{experience.company}</span>
-                      </div>*/}
+                      </div>
                     </div>
-                   {/* <div className="flex flex-col md:items-end text-sm text-gray-600">
+                  <div className="flex flex-col md:items-end text-sm text-gray-600">
                       <div className="flex items-center mb-1">
                         <Calendar size={16} className="mr-2" />
                         <span>{experience.period}</span>
@@ -98,10 +95,10 @@ export function Experience() {
                         <MapPin size={16} className="mr-2" />
                         <span>{experience.location}</span>
                       </div>
-                    </div>*/}
+                    </div>
                   </div>
 
-                  {/*<ul className="space-y-2 mb-4">
+                  <ul className="space-y-2 mb-4">
                     {experience.description.map((item, itemIndex) => (
                       <li key={itemIndex} className="text-gray-700 flex items-start">
                         <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -119,7 +116,7 @@ export function Experience() {
                         {tech}
                       </span>
                     ))}
-                  </div>*/}
+                  </div>
                 </div>
               </motion.div>
             ))}
